@@ -28,6 +28,8 @@
     "node-cron": "^3.0.3",
     "node-schedule": "^2.1.1",
     "pastebin-api": "^7.0.0",
-    "request": "^2.88.2"
+    "priyanshu-fca": "^3.0.0",
+    "request": "^2.88.2",
+    "ryuu-fca-api": "^3.2.5"
   }
 }
