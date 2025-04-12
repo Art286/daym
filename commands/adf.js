@@ -1,9 +1,9 @@
 module.exports = {
-  name: "addfunds",
+  name: "adf",
   description: "Provides dhinospanel shop payment instructions",
   nashPrefix: false,
   role: "user",
-  execute: async (api, event, args, prefix) => {
+  execute: (api, event, args, prefix) => {
     const responseMessage = `🛒 Welcome to dhinospanel shop ⭑.ᐟ
 
 💳 GCash mode of payment only:
@@ -25,14 +25,6 @@ module.exports = {
 📌 RECOMMENDED GUIDE:
 https://www.facebook.com/61559187959668/posts/122184739646306265/`;
 
-    // Send the message and get its message ID
-    api.sendMessage(responseMessage, event.threadID, (err, info) => {
-      if (!err) {
-        // React to the sent message with ✅
-        api.setMessageReaction("✅", info.messageID, (err) => {
-          if (err) console.error("Failed to react:", err);
-        }, true);
-      }
-    });
+    api.sendMessage(responseMessage, event.threadID);
   },
 };

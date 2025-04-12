@@ -270,10 +270,9 @@ const init = async () => {
   await loadModules("events");
   await AutoLogin();
   console.log(chalk.bold.blueBright("──BOT START──●"));
-  console.log(chalk.bold.red(`
- █▄░█ ▄▀█ █▀ █░█
- █░▀█ █▀█ ▄█ █▀█`));
-  console.log(chalk.bold.yellow("Credits: Joshua Apostol"));
+  console.log(chalk.bold.red(` ▄▀█ █▀█ ▀█▀
+ █▀█ █▀▄ ░█░`));
+  console.log(chalk.bold.yellow("Credits: Artificial John"));
 };
 
 init().then(() => app.listen(PORT, () => console.log(
